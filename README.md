@@ -12,7 +12,7 @@ El objetivo es analizar cómo diferentes estilos visuales impactan en la experie
 
 ---
 
-## 🚀 Demo
+## 🚀 Link al Deploy
 
 👉 **[Ver Deploy en Vercel](https://codemax-landing.vercel.app/)**
 
