@@ -12,6 +12,12 @@ El objetivo es analizar cómo diferentes estilos visuales impactan en la experie
 
 ---
 
+## 🚀 Demo
+
+👉 **[Ver Deploy en Vercel](https://codemax-landing.vercel.app/)**
+
+---
+
 ## 🎯 Objetivo del proyecto
 
 - Comparar dos enfoques de diseño UI generados por IA
