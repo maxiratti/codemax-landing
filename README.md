@@ -23,6 +23,7 @@ El objetivo es analizar cómo diferentes estilos visuales impactan en la experie
 ---
 
 ## 🧱 Estructura del proyecto
+```
 /
 ├── index.html
 ├── prompt.html
@@ -40,7 +41,7 @@ El objetivo es analizar cómo diferentes estilos visuales impactan en la experie
 └── assets/
 ├── images/
 └── icons/
-
+```
 
 ---
 
