@@ -18,6 +18,7 @@ El objetivo es analizar cómo diferentes estilos visuales impactan en la experie
 
 ---
 
+
 ## 🎯 Objetivo del proyecto
 
 - Comparar dos enfoques de diseño UI generados por IA
@@ -101,9 +102,20 @@ El `index.html` funciona como un hub de comparación con:
 
 ---
 
-## 📸 Vista previa
+## 📸 Vistas previa
 
-> (Podés agregar screenshots acá si querés subir nota extra)
+## Página de Portada
+
+![Página de Portada](assets\images\portada.png)
+
+## Página de la Landing AI 1
+
+![Página de Landing-ai-1](assets\images\landing-ai-1.png)
+
+## Página de la Landing AI 2
+
+![Página de Landing-ai-2](assets\images\landing-ai-2.png)
+
 
 ---
 
