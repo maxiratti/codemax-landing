@@ -106,15 +106,15 @@ El `index.html` funciona como un hub de comparación con:
 
 ## Página de Portada
 
-![Página de Portada](assets\images\portada.png)
+![Página de Portada](assets/images/portada.png)
 
 ## Página de la Landing AI 1
 
-![Página de Landing-ai-1](assets\images\landing-ai-1.png)
+![Página de Landing-ai-1](assets/images/landing-ai-1.png)
 
 ## Página de la Landing AI 2
 
-![Página de Landing-ai-2](assets\images\landing-ai-2.png)
+![Página de Landing-ai-2](assets/images/landing-ai-2.png)
 
 
 ---
