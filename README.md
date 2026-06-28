@@ -109,7 +109,7 @@ El `index.html` funciona como un hub de comparación con:
 
 ## 👨‍💻 Autor
 
-Proyecto desarrollado por Maximiliano Carlos Ratti, como práctica de FrontEnd para academia de programación.
+Proyecto desarrollado por **Maximiliano Carlos Ratti**, como práctica de FrontEnd para academia de programación.
 
 ---
 

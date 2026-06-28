@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CodeMax Academy — Aprende programación con los mejores instructores. Cursos de desarrollo web, mobile, datos e IA." />
+  <title>CodeMax Academy — Aprende a Programar en 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/landing-ai-2.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="header" role="banner" id="top">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a href="#top" class="nav__logo" aria-label="CodeMax Academy — Inicio">
+        <span class="nav__logo-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="28" height="28" rx="8" fill="url(#grad1)"/>
+            <path d="M8 10l4 4-4 4M14 18h6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs><linearGradient id="grad1" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#4F8CFF"/><stop offset="1" stop-color="#6D5EF9"/></linearGradient></defs>
+          </svg>
+        </span>
+        CodeMax<span>Academy</span>
+      </a>
+
+      <button class="nav__hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu" role="list">
+        <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+        <li><a href="#cursos" class="nav__link">Cursos</a></li>
+        <li><a href="#metodologia" class="nav__link">Metodología</a></li>
+        <li><a href="#testimonios" class="nav__link">Testimonios</a></li>
+        <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        <li><a href="#contacto" class="nav__cta">Comenzar ahora</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="badge">🚀 +10.000 estudiantes en Latinoamérica</span>
+          <h1 id="hero-title" class="hero__title">
+            Domina la programación.<br>
+            <span class="gradient-text">Construye tu futuro.</span>
+          </h1>
+          <p class="hero__subtitle">Aprende desarrollo web, mobile, ciencia de datos e inteligencia artificial con proyectos reales y mentores expertos de la industria.</p>
+          <div class="hero__actions">
+            <a href="#cursos" class="btn btn--primary">Explorar cursos</a>
+            <a href="#nosotros" class="btn btn--ghost">Conoce más →</a>
+          </div>
+          <div class="hero__stats" role="list" aria-label="Estadísticas de la academia">
+            <div class="hero__stat" role="listitem">
+              <strong>+10K</strong>
+              <span>Estudiantes</span>
+            </div>
+            <div class="hero__stat-divider" aria-hidden="true"></div>
+            <div class="hero__stat" role="listitem">
+              <strong>98%</strong>
+              <span>Satisfacción</span>
+            </div>
+            <div class="hero__stat-divider" aria-hidden="true"></div>
+            <div class="hero__stat" role="listitem">
+              <strong>+200</strong>
+              <span>Horas de contenido</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-window__bar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="code-window__title">app.js</span>
+            </div>
+            <pre class="code-window__body"><code><span class="c-blue">const</span> <span class="c-teal">student</span> = {
+  name: <span class="c-green">'Tú'</span>,
+  goal: <span class="c-green">'Programar'</span>,
+  level: <span class="c-green">'Principiante'</span>,
+};
+
+<span class="c-blue">async function</span> <span class="c-teal">learn</span>() {
+  <span class="c-purple">await</span> CodeMax.enroll(student);
+  <span class="c-purple">return</span> <span class="c-green">'🎉 Futuro brillante'</span>;
+}
+
+learn();</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LOGOS / TECNOLOGÍAS ===== -->
+    <section class="logos" aria-labelledby="logos-title">
+      <div class="container">
+        <p id="logos-title" class="logos__label">Tecnologías que dominarás</p>
+        <div class="logos__track" aria-label="Tecnologías: JavaScript, Python, React, Node.js, TypeScript, Docker, AWS, PostgreSQL">
+          <div class="logos__grid">
+            <div class="logos__item">
+              <svg width="32" height="32" viewBox="0 0 32 32" aria-label="JavaScript"><rect width="32" height="32" rx="4" fill="#F7DF1E"/><path d="M9 25.3l2.6-1.6c.5.9 1 1.6 2 1.6.97 0 1.6-.38 1.6-1.87V14h3.2v9.5c0 3.08-1.8 4.48-4.43 4.48-2.38 0-3.75-1.23-4.47-2.68zM20.5 25l2.6-1.5c.68 1.12 1.57 1.94 3.13 1.94 1.31 0 2.15-.66 2.15-1.57 0-1.09-.86-1.47-2.3-2.1l-.79-.34c-2.28-.97-3.8-2.2-3.8-4.77 0-2.38 1.81-4.18 4.63-4.18 2.01 0 3.46.7 4.49 2.53l-2.46 1.58c-.54-.97-1.13-1.35-2.03-1.35-.93 0-1.52.59-1.52 1.35 0 .94.59 1.33 1.96 1.91l.79.34c2.69 1.15 4.2 2.33 4.2 4.97 0 2.85-2.24 4.4-5.24 4.4-2.94 0-4.84-1.4-5.77-3.21z" fill="#000"/></svg>
+            </div>
+            <div class="logos__item">
+              <svg width="32" height="32" viewBox="0 0 32 32" aria-label="Python"><rect width="32" height="32" rx="4" fill="#3776AB"/><text x="7" y="22" font-size="16" fill="#FFD43B" font-family="monospace" font-weight="bold">Py</text></svg>
+            </div>
+            <div class="logos__item">
+              <svg width="32" height="32" viewBox="0 0 32 32" aria-label="React"><rect width="32" height="32" rx="4" fill="#20232A"/><circle cx="16" cy="16" r="3" fill="#61DAFB"/><ellipse cx="16" cy="16" rx="13" ry="5" fill="none" stroke="#61DAFB" stroke-width="1.5"/><ellipse cx="16" cy="16" rx="13" ry="5" fill="none" stroke="#61DAFB" stroke-width="1.5" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="13" ry="5" fill="none" stroke="#61DAFB" stroke-width="1.5" transform="rotate(120 16 16)"/></svg>
+            </div>
+            <div class="logos__item">
+              <svg width="32" height="32" viewBox="0 0 32 32" aria-label="Node.js"><rect width="32" height="32" rx="4" fill="#339933"/><text x="4" y="22" font-size="11" fill="white" font-family="monospace" font-weight="bold">Node</text></svg>
+            </div>
+            <div class="logos__item">
+              <svg width="32" height="32" viewBox="0 0 32 32" aria-label="TypeScript"><rect width="32" height="32" rx="4" fill="#3178C6"/><text x="6" y="22" font-size="14" fill="white" font-family="monospace" font-weight="bold">TS</text></svg>
+            </div>
+            <div class="logos__item">
+              <svg width="32" height="32" viewBox="0 0 32 32" aria-label="Docker"><rect width="32" height="32" rx="4" fill="#2496ED"/><text x="3" y="22" font-size="9" fill="white" font-family="sans-serif" font-weight="bold">Docker</text></svg>
+            </div>
+            <div class="logos__item">
+              <svg width="32" height="32" viewBox="0 0 32 32" aria-label="AWS"><rect width="32" height="32" rx="4" fill="#FF9900"/><text x="5" y="22" font-size="13" fill="white" font-family="monospace" font-weight="bold">AWS</text></svg>
+            </div>
+            <div class="logos__item">
+              <svg width="32" height="32" viewBox="0 0 32 32" aria-label="PostgreSQL"><rect width="32" height="32" rx="4" fill="#336791"/><text x="5" y="22" font-size="10" fill="white" font-family="monospace" font-weight="bold">psql</text></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE NOSOTROS ===== -->
+    <section class="section about" id="nosotros" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__content">
+            <span class="section-badge">Sobre nosotros</span>
+            <h2 id="about-title" class="section-title">Formamos a los desarrolladores del mañana, hoy.</h2>
+            <p class="section-text">CodeMax Academy nació en 2019 con una misión clara: hacer que la educación tecnológica de alta calidad sea accesible para todos en Latinoamérica. Somos más que una academia; somos una comunidad de apasionados por la tecnología.</p>
+            <p class="section-text">Nuestros instructores son profesionales activos en empresas como Google, Meta, Mercado Libre y startups unicornio. Enseñamos lo que realmente se usa en la industria.</p>
+            <div class="about__metrics" role="list">
+              <div class="metric" role="listitem">
+                <strong class="metric__num">2019</strong>
+                <span class="metric__label">Año de fundación</span>
+              </div>
+              <div class="metric" role="listitem">
+                <strong class="metric__num">15+</strong>
+                <span class="metric__label">Instructores expertos</span>
+              </div>
+              <div class="metric" role="listitem">
+                <strong class="metric__num">8</strong>
+                <span class="metric__label">Países con estudiantes</span>
+              </div>
+            </div>
+          </div>
+          <div class="about__visual" aria-hidden="true">
+            <div class="glass-card about__card">
+              <div class="about__card-icon">🎯</div>
+              <h3>Nuestra misión</h3>
+              <p>Democratizar el acceso a la educación tecnológica de calidad en América Latina.</p>
+            </div>
+            <div class="glass-card about__card about__card--offset">
+              <div class="about__card-icon">💡</div>
+              <h3>Nuestra visión</h3>
+              <p>Ser el referente número uno de formación tech en la región para 2027.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BENEFICIOS ===== -->
+    <section class="section benefits" id="beneficios" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">¿Por qué elegirnos?</span>
+          <h2 id="benefits-title" class="section-title">Todo lo que necesitas para triunfar</h2>
+          <p class="section-subtitle">Una experiencia de aprendizaje diseñada para llevarte del cero al empleo en el menor tiempo posible.</p>
+        </div>
+        <div class="benefits__grid">
+          <div class="glass-card benefit-card">
+            <div class="benefit-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            </div>
+            <h3 class="benefit-card__title">Instructores de élite</h3>
+            <p class="benefit-card__text">Aprende de profesionales activos en empresas top. Sin teóricos, solo practitioners.</p>
+          </div>
+          <div class="glass-card benefit-card">
+            <div class="benefit-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="benefit-card__title">100% online y flexible</h3>
+            <p class="benefit-card__text">Estudia a tu ritmo, cuando quieras y desde cualquier dispositivo. El acceso es de por vida.</p>
+          </div>
+          <div class="glass-card benefit-card">
+            <div class="benefit-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3 class="benefit-card__title">Comunidad activa</h3>
+            <p class="benefit-card__text">Únete a más de 10.000 estudiantes en nuestra comunidad de Discord, Slack y foros.</p>
+          </div>
+          <div class="glass-card benefit-card">
+            <div class="benefit-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </div>
+            <h3 class="benefit-card__title">Proyectos reales</h3>
+            <p class="benefit-card__text">Construye un portafolio sólido con proyectos que impresionan a los reclutadores.</p>
+          </div>
+          <div class="glass-card benefit-card">
+            <div class="benefit-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+            </div>
+            <h3 class="benefit-card__title">Certificación reconocida</h3>
+            <p class="benefit-card__text">Obtén un certificado verificable que valida tus habilidades ante empleadores y clientes.</p>
+          </div>
+          <div class="glass-card benefit-card">
+            <div class="benefit-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h3 class="benefit-card__title">Soporte 24/7</h3>
+            <p class="benefit-card__text">Nunca estás solo. Nuestro equipo y comunidad te responden en menos de 2 horas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CURSOS ===== -->
+    <section class="section courses" id="cursos" aria-labelledby="courses-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Formación</span>
+          <h2 id="courses-title" class="section-title">Cursos destacados</h2>
+          <p class="section-subtitle">Elige tu camino y domina las tecnologías más demandadas del mercado.</p>
+        </div>
+        <div class="courses__grid">
+          <article class="glass-card course-card">
+            <div class="course-card__header">
+              <span class="course-card__emoji" aria-hidden="true">🌐</span>
+              <span class="course-card__level">Principiante → Avanzado</span>
+            </div>
+            <h3 class="course-card__title">Desarrollo Web Full Stack</h3>
+            <p class="course-card__text">HTML, CSS, JavaScript, React, Node.js, bases de datos y despliegue en producción.</p>
+            <div class="course-card__meta">
+              <span>⏱ 120 horas</span>
+              <span>📚 18 módulos</span>
+            </div>
+            <a href="#contacto" class="btn btn--outline btn--sm">Ver programa</a>
+          </article>
+          <article class="glass-card course-card course-card--featured">
+            <div class="course-card__badge">Más popular</div>
+            <div class="course-card__header">
+              <span class="course-card__emoji" aria-hidden="true">📱</span>
+              <span class="course-card__level">Intermedio</span>
+            </div>
+            <h3 class="course-card__title">Desarrollo Mobile con React Native</h3>
+            <p class="course-card__text">Crea aplicaciones nativas para iOS y Android con una sola base de código en JavaScript.</p>
+            <div class="course-card__meta">
+              <span>⏱ 80 horas</span>
+              <span>📚 12 módulos</span>
+            </div>
+            <a href="#contacto" class="btn btn--primary btn--sm">Ver programa</a>
+          </article>
+          <article class="glass-card course-card">
+            <div class="course-card__header">
+              <span class="course-card__emoji" aria-hidden="true">🤖</span>
+              <span class="course-card__level">Intermedio → Avanzado</span>
+            </div>
+            <h3 class="course-card__title">Inteligencia Artificial y Machine Learning</h3>
+            <p class="course-card__text">Python, NumPy, Pandas, scikit-learn, TensorFlow y despliegue de modelos en producción.</p>
+            <div class="course-card__meta">
+              <span>⏱ 100 horas</span>
+              <span>📚 15 módulos</span>
+            </div>
+            <a href="#contacto" class="btn btn--outline btn--sm">Ver programa</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RUTA DE APRENDIZAJE ===== -->
+    <section class="section roadmap" id="ruta" aria-labelledby="roadmap-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Tu camino</span>
+          <h2 id="roadmap-title" class="section-title">Ruta de aprendizaje</h2>
+          <p class="section-subtitle">Un proceso claro y estructurado para llevarte desde cero hasta el empleo tech.</p>
+        </div>
+        <ol class="roadmap__steps" aria-label="Pasos del proceso de aprendizaje">
+          <li class="roadmap__step">
+            <div class="roadmap__step-num" aria-hidden="true">01</div>
+            <div class="roadmap__step-content glass-card">
+              <h3>Fundamentos</h3>
+              <p>Lógica de programación, algoritmos, estructuras de datos y primeros pasos con HTML/CSS/JS.</p>
+            </div>
+          </li>
+          <li class="roadmap__step">
+            <div class="roadmap__step-num" aria-hidden="true">02</div>
+            <div class="roadmap__step-content glass-card">
+              <h3>Especialización</h3>
+              <p>Elige tu stack: Frontend, Backend, Mobile o Data. Profundiza en frameworks y herramientas profesionales.</p>
+            </div>
+          </li>
+          <li class="roadmap__step">
+            <div class="roadmap__step-num" aria-hidden="true">03</div>
+            <div class="roadmap__step-content glass-card">
+              <h3>Proyectos reales</h3>
+              <p>Aplica lo aprendido en proyectos con usuarios reales, colaboración en equipo y código en producción.</p>
+            </div>
+          </li>
+          <li class="roadmap__step">
+            <div class="roadmap__step-num" aria-hidden="true">04</div>
+            <div class="roadmap__step-content glass-card">
+              <h3>Empleo y carrera</h3>
+              <p>Preparación de CV, portfolio, entrevistas técnicas y acceso a nuestra red de empresas aliadas.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== METODOLOGÍA ===== -->
+    <section class="section methodology" id="metodologia" aria-labelledby="methodology-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Cómo enseñamos</span>
+          <h2 id="methodology-title" class="section-title">Nuestra metodología</h2>
+          <p class="section-subtitle">Aprender programación no es memorizar, es construir. Por eso todo lo que enseñamos está orientado a la práctica.</p>
+        </div>
+        <div class="methodology__grid">
+          <div class="glass-card method-card">
+            <div class="method-card__icon" aria-hidden="true">🎥</div>
+            <h3>Video clases HD</h3>
+            <p>Contenido grabado de alta calidad, accesible de por vida, con subtítulos y velocidad ajustable.</p>
+          </div>
+          <div class="glass-card method-card">
+            <div class="method-card__icon" aria-hidden="true">💻</div>
+            <h3>Entorno de práctica</h3>
+            <p>Editor integrado en el navegador para practicar directamente sin instalar nada en tu equipo.</p>
+          </div>
+          <div class="glass-card method-card">
+            <div class="method-card__icon" aria-hidden="true">🧑‍🏫</div>
+            <h3>Mentoría en vivo</h3>
+            <p>Sesiones semanales en vivo con mentores para resolver dudas, code review y orientación de carrera.</p>
+          </div>
+          <div class="glass-card method-card">
+            <div class="method-card__icon" aria-hidden="true">🏆</div>
+            <h3>Evaluaciones prácticas</h3>
+            <p>Desafíos y proyectos evaluados para medir tu progreso real y prepararte para entrevistas técnicas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section class="section projects" id="proyectos" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Portafolios reales</span>
+          <h2 id="projects-title" class="section-title">Proyectos de nuestros estudiantes</h2>
+          <p class="section-subtitle">Esto construyeron nuestros estudiantes antes de conseguir su primer empleo tech.</p>
+        </div>
+        <div class="projects__grid">
+          <article class="glass-card project-card">
+            <div class="project-card__image" aria-hidden="true">
+              <div class="project-card__placeholder project-card__placeholder--1">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+            </div>
+            <h3>E-Commerce con React y Node.js</h3>
+            <p>Tienda online completa con carrito, pagos con Stripe y panel de administración.</p>
+            <div class="project-card__tags">
+              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span>
+            </div>
+          </article>
+          <article class="glass-card project-card">
+            <div class="project-card__image" aria-hidden="true">
+              <div class="project-card__placeholder project-card__placeholder--2">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+            <h3>App de Análisis de Datos con IA</h3>
+            <p>Dashboard interactivo para visualizar métricas de negocio con predicciones de ML.</p>
+            <div class="project-card__tags">
+              <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Chart.js</span>
+            </div>
+          </article>
+          <article class="glass-card project-card">
+            <div class="project-card__image" aria-hidden="true">
+              <div class="project-card__placeholder project-card__placeholder--3">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              </div>
+            </div>
+            <h3>App Mobile de Gestión Financiera</h3>
+            <p>Aplicación React Native para iOS y Android con sincronización en tiempo real.</p>
+            <div class="project-card__tags">
+              <span class="tag">React Native</span><span class="tag">Firebase</span><span class="tag">Redux</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIOS ===== -->
+    <section class="section testimonials" id="testimonios" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Lo que dicen</span>
+          <h2 id="testimonials-title" class="section-title">Historias de éxito reales</h2>
+          <p class="section-subtitle">Más de 10.000 estudiantes ya transformaron su carrera con CodeMax Academy.</p>
+        </div>
+        <div class="testimonials__grid">
+          <blockquote class="glass-card testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 estrellas" role="img">★★★★★</div>
+            <p class="testimonial-card__text">"En 8 meses pasé de no saber nada de programación a trabajar como desarrolladora junior en una fintech. La mentoría y los proyectos reales marcaron la diferencia."</p>
+            <footer class="testimonial-card__footer">
+              <div class="testimonial-card__avatar" aria-hidden="true">SA</div>
+              <div>
+                <strong class="testimonial-card__name">Sofía Arango</strong>
+                <span class="testimonial-card__role">Frontend Developer @ Nubank</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="glass-card testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 estrellas" role="img">★★★★★</div>
+            <p class="testimonial-card__text">"El curso de IA fue increíble. El nivel de profundidad y la calidad de los instructores no se compara con nada que haya encontrado antes. Hoy soy ML Engineer."</p>
+            <footer class="testimonial-card__footer">
+              <div class="testimonial-card__avatar" aria-hidden="true">CR</div>
+              <div>
+                <strong class="testimonial-card__name">Carlos Rodríguez</strong>
+                <span class="testimonial-card__role">ML Engineer @ Mercado Libre</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="glass-card testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 estrellas" role="img">★★★★★</div>
+            <p class="testimonial-card__text">"Pasé de diseñadora gráfica a desarrolladora full stack. CodeMax me dio las herramientas, la comunidad y la confianza para hacer el cambio. ¡100% recomendado!"</p>
+            <footer class="testimonial-card__footer">
+              <div class="testimonial-card__avatar" aria-hidden="true">LM</div>
+              <div>
+                <strong class="testimonial-card__name">Laura Mendoza</strong>
+                <span class="testimonial-card__role">Full Stack Developer @ Rappi</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">FAQ</span>
+          <h2 id="faq-title" class="section-title">Preguntas frecuentes</h2>
+        </div>
+        <div class="faq__list" role="list">
+          <div class="glass-card faq-item" role="listitem">
+            <button class="faq-item__question" aria-expanded="false" aria-controls="faq-1">
+              ¿Necesito conocimientos previos para comenzar?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-item__answer" id="faq-1" hidden>
+              <p>No. Nuestros cursos están diseñados para comenzar desde cero. Solo necesitas ganas de aprender y una computadora con acceso a internet.</p>
+            </div>
+          </div>
+          <div class="glass-card faq-item" role="listitem">
+            <button class="faq-item__question" aria-expanded="false" aria-controls="faq-2">
+              ¿Cuánto tiempo necesito dedicar por semana?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-item__answer" id="faq-2" hidden>
+              <p>Recomendamos entre 10 y 15 horas semanales para progresar de forma constante. Sin embargo, el acceso es de por vida y puedes ir a tu propio ritmo.</p>
+            </div>
+          </div>
+          <div class="glass-card faq-item" role="listitem">
+            <button class="faq-item__question" aria-expanded="false" aria-controls="faq-3">
+              ¿Obtengo certificado al finalizar?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-item__answer" id="faq-3" hidden>
+              <p>Sí. Al completar cada curso recibes un certificado verificable con código QR que puedes incluir en tu LinkedIn y CV. Es ampliamente reconocido por empresas de la región.</p>
+            </div>
+          </div>
+          <div class="glass-card faq-item" role="listitem">
+            <button class="faq-item__question" aria-expanded="false" aria-controls="faq-4">
+              ¿Hay opciones de financiación disponibles?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-item__answer" id="faq-4" hidden>
+              <p>Sí. Ofrecemos pagos en cuotas sin interés, becas parciales por mérito y el programa ISA (Income Share Agreement) para que empieces a pagar solo cuando consigas empleo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FORMULARIO ===== -->
+    <section class="section contact" id="contacto" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__info">
+            <span class="section-badge">Contáctanos</span>
+            <h2 id="contact-title" class="section-title">¿Listo para comenzar tu carrera tech?</h2>
+            <p class="section-text">Completa el formulario y un asesor te contactará en menos de 24 horas para guiarte en tu elección de curso.</p>
+            <ul class="contact__details" aria-label="Datos de contacto">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                hola@codemaxacademy.com
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.07 6.07l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                +54 11 4567-8901
+              </li>
+            </ul>
+          </div>
+          <div class="glass-card contact__form-wrapper">
+            <form class="contact-form" aria-label="Formulario de contacto" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Nombre completo</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label">Teléfono</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+54 11 0000-0000" autocomplete="tel" />
+              </div>
+              <div class="form-group">
+                <label for="course" class="form-label">Curso de interés</label>
+                <select id="course" name="course" class="form-input form-select">
+                  <option value="" disabled selected>Selecciona un curso</option>
+                  <option value="fullstack">Desarrollo Web Full Stack</option>
+                  <option value="mobile">Desarrollo Mobile React Native</option>
+                  <option value="ai">Inteligencia Artificial y ML</option>
+                  <option value="data">Ciencia de Datos</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Mensaje (opcional)</label>
+                <textarea id="message" name="message" class="form-input form-textarea" placeholder="Cuéntanos sobre tu experiencia y objetivos..." rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA FINAL ===== -->
+    <section class="section cta-final" aria-labelledby="cta-final-title">
+      <div class="container">
+        <div class="cta-final__glow" aria-hidden="true"></div>
+        <div class="cta-final__content glass-card">
+          <span class="section-badge">Empieza hoy</span>
+          <h2 id="cta-final-title" class="cta-final__title">Tu carrera tech comienza con un clic.</h2>
+          <p class="cta-final__subtitle">Únete a más de 10.000 estudiantes que ya están construyendo el futuro que siempre soñaron.</p>
+          <div class="cta-final__actions">
+            <a href="#contacto" class="btn btn--primary">Inscribirme ahora</a>
+            <a href="#cursos" class="btn btn--ghost">Ver todos los cursos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#top" class="nav__logo footer__logo" aria-label="CodeMax Academy">
+            <span class="nav__logo-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="8" fill="url(#grad2)"/><path d="M8 10l4 4-4 4M14 18h6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="grad2" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#4F8CFF"/><stop offset="1" stop-color="#6D5EF9"/></linearGradient></defs></svg>
+            </span>
+            CodeMax<span>Academy</span>
+          </a>
+          <p class="footer__tagline">Formando a los desarrolladores del mañana desde 2019.</p>
+          <div class="footer__social" role="list" aria-label="Redes sociales">
+            <a href="#" class="footer__social-link" aria-label="Twitter / X de CodeMax Academy" role="listitem">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn de CodeMax Academy" role="listitem">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram de CodeMax Academy" role="listitem">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="YouTube de CodeMax Academy" role="listitem">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg>
+            </a>
+          </div>
+        </div>
+        <nav class="footer__nav" aria-label="Navegación del pie de página">
+          <div class="footer__col">
+            <h3 class="footer__col-title">Cursos</h3>
+            <ul>
+              <li><a href="#cursos">Full Stack Web</a></li>
+              <li><a href="#cursos">React Native</a></li>
+              <li><a href="#cursos">IA y Machine Learning</a></li>
+              <li><a href="#cursos">Ciencia de Datos</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__col-title">Academia</h3>
+            <ul>
+              <li><a href="#nosotros">Sobre nosotros</a></li>
+              <li><a href="#metodologia">Metodología</a></li>
+              <li><a href="#testimonios">Testimonios</a></li>
+              <li><a href="#proyectos">Proyectos</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__col-title">Legal</h3>
+            <ul>
+              <li><a href="#">Política de Privacidad</a></li>
+              <li><a href="#">Términos y Condiciones</a></li>
+              <li><a href="#">Política de Cookies</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 CodeMax Academy. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
